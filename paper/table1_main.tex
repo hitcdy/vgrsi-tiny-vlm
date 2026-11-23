@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Main results on the self-built $8x8$ grounding benchmark (mean over 1 seed(s)).}
+\label{tab:main}
+\begin{tabular}{lcccccc}
+\toprule
+Model & Acc$_{len}$ & Acc$_{strict}$ & loc & count & exist & IoU \\
+\midrule
+SmolVLM-256M zero-shot (A) & 9.3 & 4.7 & 0.0 & 14.0 & 0.0 & 0.000 \\
++ LoRA SFT on seed split (B) & 22.7 & 3.3 & 0.0 & 10.0 & 0.0 & 0.002 \\
++ inference-time verifier (C) & 26.7 & 4.0 & 6.0 & 6.0 & 0.0 & 0.063 \\
++ seed-only continued SFT (D, control) & 17.3 & 0.0 & 0.0 & 0.0 & 0.0 & 0.000 \\
++ VGRSI self-training (E, ours) & 31.3 & 18.0 & 0.0 & 12.0 & 42.0 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

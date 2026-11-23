@@ -1,0 +1,13 @@
+# --- large local artifacts (regenerate with the scripts) ---
+models/
+.cache_vision/
+.hf_home/
+runs/**/adapter_*/
+# --- derived / noisy ---
+__pycache__/
+*.pyc
+*.log
+runs/mock/
+runs/abl1_*.log
+paper/figs/mock_*
+demo/*.tmp

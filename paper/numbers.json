@@ -1,0 +1,23 @@
+{
+ "backend": "real",
+ "grid": 4,
+ "seeds": 2,
+ "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+ "n_eval_q": 150,
+ "zero_shot_acc": 6.3,
+ "vgrs_acc": 18.3,
+ "abs_gain_pts": 12.0,
+ "rel_gain_pct": 190.5,
+ "sft_acc": 18.0,
+ "vgrs_vs_sft_pts": 0.3,
+ "vgrs_vs_sft_rel_pct": 1.7,
+ "seed_only_acc": 7.7,
+ "sft_acc_for_control": 18.0,
+ "arm_c_acc": 29.6,
+ "std_zero_shot": 0.5,
+ "std_sft": 6.6,
+ "std_sft_infer_verifier": 9.0,
+ "std_seed_only_cont": 5.2,
+ "std_vgrs": 12.7,
+ "parser_fp": 11
+}

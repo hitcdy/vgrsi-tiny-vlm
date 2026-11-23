@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Main results on the self-built $4x4$ grounding benchmark (mean over 2 seed(s)).}
+\label{tab:main}
+\begin{tabular}{lcccccc}
+\toprule
+Model & Acc$_{len}$ & Acc$_{strict}$ & loc & count & exist & IoU \\
+\midrule
+SmolVLM-256M zero-shot (A) & 10.0 & 6.0 & 0.0 & 14.0 & 4.0 & 0.000 \\
++ LoRA SFT on seed split (B) & 24.7 & 22.7 & 0.0 & 60.0 & 8.0 & 0.013 \\
++ inference-time verifier (C) & 43.3 & 23.3 & 4.0 & 58.0 & 8.0 & 0.146 \\
++ seed-only continued SFT (D, control) & 24.7 & 4.0 & 0.0 & 4.0 & 8.0 & 0.011 \\
++ VGRSI self-training (E, ours) & 34.7 & 27.3 & 0.0 & 42.0 & 40.0 & 0.017 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,33 @@
+# VGRSI experiment configuration
+# Every number in the paper is produced from this file + configs/exp.yaml:seed.
+seed: 42
+model_id: HuggingFaceTB/SmolVLM-256M-Instruct
+img: 256
+
+data:
+  out_dir: data
+  n_train: 60      # labelled seed split  (seed 2026)
+  n_pool: 40       # unlabelled pool      (seed 777)  -> verifier-only labels
+  n_eval: 50       # held-out eval split  (seed 42)   -> 150 questions
+  n_obj_min: 1
+  n_obj_max: 4
+
+train:
+  lora_r: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  lr: 0.001
+  steps: 60        # main SFT budget
+  extra_steps: 15  # arm D: compute control
+  max_new_tokens: 24
+
+rsi:
+  rounds: 2
+  steps_per_round: 60
+  pool_policy: flip_only   # flip_only | all_verified  (Table 2 ablation)
+
+eval:
+  limit: 0
+
+demo:
+  port: 8501

@@ -1,0 +1,48 @@
+{
+ "grids": [
+  {
+   "grid": 4,
+   "n_questions": 150,
+   "loc": {
+    "n": 50,
+    "recall_pct": 100.0,
+    "mean_extra_accepts": 1.08,
+    "ambiguous_pct": 62.0,
+    "random_pass_pct": 13.0
+   },
+   "count": {
+    "n": 92,
+    "exact_pct": 100.0,
+    "mae": 0.0,
+    "absent_fp_pct": 0.0
+   },
+   "exist": {
+    "n": 50,
+    "acc_pct": 84.0
+   },
+   "seconds": 1.3
+  },
+  {
+   "grid": 8,
+   "n_questions": 150,
+   "loc": {
+    "n": 50,
+    "recall_pct": 100.0,
+    "mean_extra_accepts": 1.1,
+    "ambiguous_pct": 76.0,
+    "random_pass_pct": 3.28
+   },
+   "count": {
+    "n": 99,
+    "exact_pct": 100.0,
+    "mae": 0.0,
+    "absent_fp_pct": 0.0
+   },
+   "exist": {
+    "n": 50,
+    "acc_pct": 82.0
+   },
+   "seconds": 1.1
+  }
+ ]
+}
